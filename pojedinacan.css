@@ -1,0 +1,16 @@
+.tekstito {
+    
+    text-align: center;
+    margin: 10%;
+    font-family: "Lucida Console", "Courier New", monospace;
+    border: 5px;
+    border-color: plum;
+    border-style: dotted;
+    padding: 20px;
+}
+.tekstito p {
+    text-align: left;
+}
+.nasl{
+    background-color: plum;
+}
