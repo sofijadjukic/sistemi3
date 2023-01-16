@@ -1,0 +1,37 @@
+.centar{
+    margin: auto;
+  width: 50%;
+}
+body{
+    background-color: pink;
+}
+.title, .glavni, .button {
+    margin: 15px;
+}
+
+.title, .glavni, button{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.button {
+    transition-duration: 0.4s;
+    border: none;
+    color: plum;
+    width: 40%;
+  }
+  
+  .button:hover {
+    border: none;
+    color: purple;
+    text-align: center;
+  text-decoration: none;
+    background-color: plum; 
+    color: white;
+
+  }
