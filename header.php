@@ -6,6 +6,6 @@
                 <li> <a  href="includes/logout.php">Log out</a></li>
                 <li> <a  href="deals.php"> Our deals</a> </li>
                 
-                          
+                </ul>                     
             
 </div>
