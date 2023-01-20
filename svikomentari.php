@@ -1,5 +1,6 @@
 <?php
 include "includes/svikomentariDODATNO.php";
+include "hdr.php"
  ?>
 
 
@@ -14,13 +15,7 @@ include "includes/svikomentariDODATNO.php";
 <link rel="stylesheet" href="komentari.css">
 </head>
 <body>
-<div class="header">
-            <ul>
-                <li> <a href="recepti.php">Our recipes :)</a></li>
-                <li> <a href="pocetna.php">Main Page</a></li>
-                <li> <a id="aboutus.php" href="login.html">AboutUs</a></li>
-                            </ul>          
-</div>
+
 
 
  <?php 
