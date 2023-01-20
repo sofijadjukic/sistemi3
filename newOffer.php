@@ -16,12 +16,8 @@
 
 <div class="header">
             <ul>
-                <li> <a href="recepti.php">Our recipes :)</a></li>
-                <li> <a href="pocetna.php">Main Page</a></li>
-                <li> <a id="aboutus.php" href="login.html">AboutUs</a></li>
-  </div> 
-  </li>
-                            </ul>          
+                <li> <a  href="includes/logout.php">Log out</a></li>                    
+            
 </div>
 
 
