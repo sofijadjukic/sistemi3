@@ -31,7 +31,7 @@ if ($rownum > 0) {
         
         ?>
 <br>
-        <a href="pojedinacanrecept.php?id=<?php echo $row['rid']?>" >Read More </a> </div>
+</div>
   <?php  } 
 } ?>
 </div>
