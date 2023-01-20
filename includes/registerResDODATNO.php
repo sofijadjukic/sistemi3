@@ -12,26 +12,26 @@ require_once 'funkcije.php';
 
 // some fields are not filled
 if (missingfields($ime,$mejl,$cn,$lozinka,$ponovoloz) !== false) {
-header("location: ../signup.php?error=missingfield1");
+    header("location: ../registerRes.php?error=missingfield1");
 exit();
 }
 
 // matching password
 
 if (samepass($lozinka,$ponovoloz) !== false) {
-    header("location: ../signup.php?error=passwordmissmatch");
+    header("location: ../registerRes.php?error=passwordmissmatch");
     exit(); 
 }
 
 // already taken username
 
 if (sameun($conn, $ime)!== false) {
-    header("location: ../signup.php?error=usernametaken");
+    header("location: ../registerRes.php?error=usernametaken");
     exit();
 }
 
 if (valcn($conn, $cn)!== false) {
-    header("location: ../signup.php?error=notavalidcompanynumber");
+    header("location: ../registerRes.php?error=notavalidcompanynumber");
     exit();
 }
 
