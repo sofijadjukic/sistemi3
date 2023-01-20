@@ -10,7 +10,7 @@ if (isset($_POST["submit2"])) {
 
 
     if (missingfieldlog($ime,$lozinka) !== false) {
-        header("location: ../login.php?error=emptyinp");
+        header("location: ../loginRes.php?error=emptyinp");
         exit();
         }
 
