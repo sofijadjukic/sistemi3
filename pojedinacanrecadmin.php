@@ -19,10 +19,12 @@ include "includes/pojedinacanrecadminDODATNO.php"
 </div>
 
 <?php foreach($query as $q) {?>
-<div class="tekstito">
+<div class="tekstito" id="lol">
     <div class="nasl">
 <h5> <?php  echo $q['title'] ?> </h5> </div>
 <p> <?php  echo $q['tekst'] ?> </p> </div>
+<p id="ovo"> Current rating is :<?php  echo $q['ocena'] ?> &#10039</p> 
+<p> Current number of ratings is :<?php  echo $q['brojocena'] ?></p> 
 <form method="POST">
     <input type="text" hidden name="id" value="<?php echo $q["rid"];?>">
     <button name="delete"> Delete </button>
