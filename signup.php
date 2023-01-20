@@ -14,6 +14,7 @@ echo "Student signup page ";
                 <li> <a href="login.php">Login</a></li>
                 <li> <a href="signup.php">Register</a></li>
                 <li> <a href="adminlg.php">Admin</a></li>
+                <li> <a href="registerRes.php">Restaurant</a></li>
                 <li> <a id="aboutus.php" href="login.html">AboutUs</a></li>
                             </ul>
                         
