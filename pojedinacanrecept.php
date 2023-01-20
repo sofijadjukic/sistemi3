@@ -22,7 +22,7 @@ include "hdr.php";
 <h5> <?php  echo $q['title'] ?> </h5> </div>
 <p> <?php  echo $q['tekst'] ?> </p> 
 <p>  Give this recipe a rating! </p>
-<div class="rating"> <a href="pojedinacanrecept.php?id=<?php echo $q['rid']?>&ocena=1" class="ocena"> &#10039 </a><a href="pojedinacanrecept.php?id=<?php echo $q['rid']?>&ocena=2" class="ocena"> &#10039 </a><a href="pojedinacanrecept.php?id=<?php echo $q['rid']?>&ocena=3" class="ocena"> &#10039 </a><a href="pojedinacanrecept.php?id=<?php echo $q['rid']?>&ocena=4" class="ocena"> &#10039 </a></div>
+<div class="rating"> <a href="includes/oceneDODATNO.php?id=<?php echo $q['rid']?>&ocena=1" class="ocena"> &#10039 </a><a href="includes/oceneDODATNO.php?id=<?php echo $q['rid']?>&ocena=2" class="ocena"> &#10039 </a><a href="includes/oceneDODATNO.php?id=<?php echo $q['rid']?>&ocena=3" class="ocena"> &#10039 </a><a href="includes/oceneDODATNO.php?id=<?php echo $q['rid']?>&ocena=4" class="ocena"> &#10039 </a></div>
 <p> Current rating is :<?php  echo $q['ocena'] ?> &#10039</p> 
 </div>
 
