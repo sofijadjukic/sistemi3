@@ -37,7 +37,7 @@ $result=mysqli_query($conn,$novonovo);
 
 $sql="UPDATE noviartikal SET ocena='$novasrednja' WHERE rid='$intid';";
 $result=mysqli_query($conn,$sql);
-
+header("location: ../pojedinacanrecept.php?id=$id");
 mysqli_close($conn);
 }
 
