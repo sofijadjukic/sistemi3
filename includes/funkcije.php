@@ -17,7 +17,7 @@ function sameun($conn, $ime) {
     $stmt= mysqli_stmt_init($conn); //using prepared stmt to make it more secure- user can write code in input and change our db
     
     if (!mysqli_stmt_prepare($stmt,$tabela)){
-        header("location: ../signup.php?error=ovdegreska1");
+        header("location: ../registerRes?error=ovdegreska1");
     exit();
     }
 
@@ -50,7 +50,7 @@ function AddNewUser($conn,$ime,$mejl,$cn,$lozinka) {
     $tabela = "INSERT INTO restaurants (rusername,remail,rcn,rpassword) VALUES (?, ?, ?, ?);" ;
     $stmt= mysqli_stmt_init($conn); //using prepared stmt to make it more secure- user can write code in input and change our db
     if (!mysqli_stmt_prepare($stmt, $tabela)){
-        header("location: ../signup.php?error=fejlovde2");
+        header("location: ../registerRes?error=fejlovde2");
     exit();
     }
 
@@ -76,14 +76,14 @@ function missingfieldlog($ime,$lozinka) {
 function  ExistingUser($conn, $ime, $lozinka){
     $validusername= sameun($conn, $ime); 
 
-    if ($validusername === false) { header("location: ../login.php?error=UsernameNotFound");
+    if ($validusername === false) { header("location: ../loginRes.php?error=UsernameNotFound");
     exit(); }
 
 
 $skrivenalozinka= $validusername["rpassword"];
 $tacnalozinka= password_verify($lozinka,$skrivenalozinka);
 if ($tacnalozinka === false) {
-    header("location: ../login.php?error=wrongpassword");
+    header("location: ../loginRes.php?error=wrongpassword");
     exit();
 }
 else if ($tacnalozinka === true) {
